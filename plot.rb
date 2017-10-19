@@ -25,6 +25,8 @@ class KPlot < Gruffy::Scatter
     `xdg-open #{@file}`
   end
 
+  private
+
   def get_x_values(points)
     x_values = []
     points.each do |p|
